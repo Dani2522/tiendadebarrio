@@ -6,16 +6,16 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        String name = "Leche Entera";
-        String description = "Bolsa x 1.100 ml";
-        String catogary = "Lacteos";
-        String Label = "Leches";
-        double Price = 3.100;
-        String Url = "F2\n" +
-                "\n" +
-                "https://www.eurosupermercados.com/eurosupermercado2020//contenidos/images/ecommerce_productos/7702001041404.jpg";
+        String name;
+        String description;
+        String catogary;
+        String Label;
+        double Price;
 
-        System.out.println("Nombre: " + name);
+
+
+        menu m = new menu();
+        m.runMenu();
     }
 
 }
