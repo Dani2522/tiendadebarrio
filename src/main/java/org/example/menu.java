@@ -8,9 +8,9 @@ public class menu {
         switch (choice) {
             case 1 : product.addNewProduct();
                     break;
-            case 2 : removeProduct();
+            case 2 : product.removeProduct();
                     break;
-            case 3 : updateProduct();
+            case 3 : product.updateProduct();
                     break;
             case 4 : product.getAllProducts();
                     break;
@@ -47,19 +47,6 @@ public class menu {
         System.out.println("±----------------------------------------±");
         System.out.print("   Ingresa tu opción:    (1 - 5)  ");
     }
-
-    public void addProduct() {
-        System.out.println("futura implementación de addProduct");
-    }
-
-    public void removeProduct() {
-        System.out.println("futura implementación de removeProduct");
-    }
-
-    public void updateProduct() {
-        System.out.println("futura implementación de updateProduct");
-    }
-
 
     public void runMenu() {
         Scanner scanner = new Scanner(System.in);
