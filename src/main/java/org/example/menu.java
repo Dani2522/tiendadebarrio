@@ -2,15 +2,22 @@ package org.example;
 import java.util.Scanner;
 
 public class menu {
+    Product product = new Product();
 
     private void handleUserChoice(int choice) {
         switch (choice) {
-            case 1 : addProduct();
-            case 2 : removeProduct();
-            case 3 : updateProduct();
-            case 4 : getAllProducts();
+            case 1 : product.addNewProduct();
+                    break;
+            case 2 : product.removeProduct();
+                    break;
+            case 3 : product.updateProduct();
+                    break;
+            case 4 : product.getAllProducts();
+                    break;
             case 5 : System.out.println("Saliendo...");
+                    break;
             default : System.out.println("Opción invalida. Por favor intenta de nuevo.");
+
         }
 
     }
@@ -41,29 +48,13 @@ public class menu {
         System.out.print("   Ingresa tu opción:    (1 - 5)  ");
     }
 
-    public void addProduct() {
-        System.out.println("futura implementación de addProduct");
-    }
-
-    public void removeProduct() {
-        System.out.println("futura implementación de removeProduct");
-    }
-
-    public void updateProduct() {
-        System.out.println("futura implementación de updateProduct");
-    }
-
-    public void getAllProducts() {
-        System.out.println("futura implementación de getAllProducts");
-    }
-
     public void runMenu() {
         Scanner scanner = new Scanner(System.in);
         int choice;
         do {
             displayMenu();
             choice = scanner.nextInt();
-            scanner.nextLine(); // Consume the newline character
+            scanner.nextLine();
             handleUserChoice(choice);
         } while (choice != 5);
     }
