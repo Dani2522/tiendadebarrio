@@ -59,7 +59,7 @@ public class Product {
         System.out.println("\n **Estos son los productos de tu inventario:**");
 
         for (int i = 0; i < id.size(); i++) {
-            System.out.println(id.get(i) + " | " + name.get(i) + " | " + price.get(i) + " | " + quantity.get(i)); // Tarea agregar los otros campos //
+            System.out.println(id.get(i) + " | " + name.get(i) + " | " + price.get(i) + " | " + quantity.get(i)  + " | " + description.get(i) + " | " + category.get(i) + " | " + label.get(i));
         }
 
     }
